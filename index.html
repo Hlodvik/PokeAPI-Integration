@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <div id="toast-container" class="position-fixed top-0 start-50 translate-middle-x d-none">
+            <div id="custom-toast" class="custom-toast">
+                <span id="toastMessage"></span>
+                <button id="closeToast" class="close-toast">&times;</button>
+            </div>
+        </div>
+        <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
+        <button id="searchButton">Search</button>
+        <div id="loading" class="d-none">
+            <div id="progress" class="d-none" style="height: 10px; width: 100%; max-width: 300px;">
+                <div id="loadingBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+        </div>
+        <div id="pokemonInfo" class="d-none">
+            <h2 id="pokemonName"></h2>
+            <img id="pokemonImage">
+            <p id="pokemonType"></p>
+            <p id="pokemonHeight"></p>
+            <p id="pokemonWeight"></p>
+            <p id="pokemonAbilities"></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

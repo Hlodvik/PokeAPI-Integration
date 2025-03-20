@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #ffcc00;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+#pokemonInfo {
+    margin-top: 1.3rem;  
+}
+
+#pokemonImage {
+    width: 10rem;
+    height: auto;
+}
+ 
+#loading {
+    font-weight: bold;
+    color: #555;
+    margin-top: 1em;
+}
+.custom-toast {
+    background-color: #dc3545; /* Red background */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+    max-width: 400px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.close-toast {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-toast:hover {
+    opacity: 0.7;
+}
+
+/* Clickable suggestion styling */
+.suggestion {
+    color: #ffd700; /* Gold for better visibility */
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.suggestion:hover {
+    color: #ffeb3b; /* Lighter gold */
+}
